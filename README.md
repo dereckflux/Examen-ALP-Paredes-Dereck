@@ -37,8 +37,7 @@ Examen-ALP-Paredes-Dereck/
 |   `-- CasosDePrueba.md       # Matriz de casos de prueba CP01–CP08
 `-- evidencias/
     |-- Ejecucion.png          # Listado y reporte académico
-    |-- CP01 … CP08 *.png      # Una captura por caso de prueba
-    `-- salidas/               # Salida completa de cada ejecución en texto
+    `-- CP01 … CP08 *.png      # Una captura por caso de prueba
 ```
 
 ## Requisitos

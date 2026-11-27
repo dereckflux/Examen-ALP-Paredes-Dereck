@@ -17,7 +17,7 @@
 |------|-----------|---------|--------------------|--------------------|--------|-----------|
 | CP01 | Registro correcto de un estudiante | Opción 1 → `E006`, `Luis Vera`, 15, 16, 17 | Se registra; promedio 16,00, máx. 17, mín. 15, APROBADO | "Estudiante registrado correctamente." Promedio 16,00, máx. 17, mín. 15, APROBADO | ✅ Aprobado | `CP01-registro-correcto.png` |
 | CP02 | Código duplicado | Opción 1 → `E001` | Mensaje de error y regreso al menú sin registrar | "Error: el codigo E001 ya esta registrado." Se guardan 5 registros (no se duplica) | ✅ Aprobado | `CP02-codigo-duplicado.png` |
-| CP03 | Calificación fuera de rango | Opción 1 → `E007`, `Maria Paz`, nota 1: 25, -1, abc, 12; nota 2: 21, 10; nota 3: 8 | Se rechazan 25, -1, abc y 21 y se vuelven a pedir; se registra con 12, 10, 8 | "Calificacion fuera de rango. Debe estar entre 0 y 20." (25, -1, 21) y "Debe ingresar un numero entero." (abc). Registrado: promedio 10,00, REPROBADO | ✅ Aprobado | `CP03-nota-fuera-de-rango.png` |
+| CP03 | Calificación fuera de rango | Opción 1 → `E007`, `Maria Lopez`, nota 1: 25, -1, abc, 12; nota 2: 21, 10; nota 3: 8 | Se rechazan 25, -1, abc y 21 y se vuelven a pedir; se registra con 12, 10, 8 | "Calificacion fuera de rango. Debe estar entre 0 y 20." (25, -1, 21) y "Debe ingresar un numero entero." (abc). Registrado: promedio 10,00, REPROBADO | ✅ Aprobado | `CP03-nota-fuera-de-rango.png` |
 | CP04 | Promedio igual al límite (14) | Opción 1 → `E008`, `Pedro Ortiz`, 12, 14, 16; opción 3 → `E003` (13, 14, 15) | Promedio 14,00 → APROBADO (se usa `>=`) | E008: promedio 14,00, APROBADO. E003: promedio 14,00, APROBADO | ✅ Aprobado | `CP04-promedio-igual-al-limite.png` |
 | CP05 | Búsqueda de estudiante existente | Opción 3 → `E004` | Muestra código, nombre, notas, promedio, máx., mín. y estado | E004, Diego Naranjo, 20-19-18, promedio 19,00, máx. 20, mín. 18, APROBADO | ✅ Aprobado | `CP05-busqueda-existente.png` |
 | CP06 | Búsqueda de estudiante inexistente | Opción 3 → `E999` | Mensaje informativo | "No existe un estudiante con el codigo E999." | ✅ Aprobado | `CP06-busqueda-inexistente.png` |
@@ -33,4 +33,5 @@
 | PA03 | Reporte académico con los datos iniciales | Opción 4 | Total 5, aprobados 3, reprobados 2, promedio general 14,60, 60,00 % aprobados, más alto E004 (19,00), más bajo E002 (11,00), bajo el promedio: E002, E003, E005; orden: E004, E001, E003, E005, E002 | ✅ Aprobado |
 
 > El reporte de PA03 coincide con el cálculo manual de `docs/Analisis.md` (73 / 5 = 14,60; 3 / 5 = 60 %).  
-> Las capturas están en `evidencias/` y las salidas completas en texto en `evidencias/salidas/`. `evidencias/Ejecucion.png` muestra el listado y el reporte académico.
+> Las capturas de pantalla de cada caso obligatorio están en `evidencias/` (tomadas durante la ejecución del programa en la terminal de PowerShell). `evidencias/Ejecucion.png` muestra el listado, el reporte académico (PA03) y la salida del programa.  
+> Antes de cada caso se restauró `datos/estudiantes.txt` a los 5 registros iniciales, excepto en CP08b, que usa el archivo guardado en CP08a.
