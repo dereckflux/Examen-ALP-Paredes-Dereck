@@ -1,6 +1,5 @@
-# codigo;nombre;apellido;nota1;nota2;nota3
-E001;Ana;Torres;8.5;9.0;7.5
-E002;Luis;Gomez;6.0;5.5;7.0
-E003;Maria;Lopez;9.5;9.0;10.0
-E004;Carlos;Ruiz;7.0;7.0;7.0
-E005;Sofia;Mendez;4.5;6.0;5.0
+E001;Carla Mena;16;18;17
+E002;Jorge Villacis;10;12;11
+E003;Paula Sanchez;13;14;15
+E004;Diego Naranjo;20;19;18
+E005;Sofia Lopez;9;13;14
