@@ -11,7 +11,7 @@ Sistema de seguimiento del rendimiento académico en Java (consola).
 | Carrera | Ingeniería de Software |
 | Asignatura | Algoritmos y Lógica de Programación |
 | Nivel / modalidad | Primero / Individual |
-| Evaluación | Examen práctico integrador (simulador) |
+| Evaluación | Examen práctico integrador |
 | Variante asignada | **D – promedio mínimo de aprobación: 14** |
 
 ## Descripción del problema
