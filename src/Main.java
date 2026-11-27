@@ -6,10 +6,16 @@ import java.util.Scanner;
  */
 public class Main {
 
+    private static final String RUTA_ARCHIVO = "datos/estudiantes.txt";
     private static final Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) {
         GestionAcademica gestion = new GestionAcademica();
+        GestorArchivos gestorArchivos = new GestorArchivos(RUTA_ARCHIVO);
+
+        // Recuperacion automatica al iniciar
+        int recuperados = gestion.agregarRecuperados(gestorArchivos.leer());
+        System.out.println("Registros recuperados de " + RUTA_ARCHIVO + ": " + recuperados);
 
         int opcion;
         do {
@@ -26,10 +32,13 @@ public class Main {
                     buscarEstudiante(gestion);
                     break;
                 case 4:
+                    generarReporte(gestion);
+                    break;
                 case 5:
-                    System.out.println("Opcion en construccion.");
+                    guardarRegistros(gestion, gestorArchivos);
                     break;
                 case 6:
+                    guardarRegistros(gestion, gestorArchivos);
                     System.out.println("Programa finalizado.");
                     break;
                 default:
@@ -92,6 +101,48 @@ public class Main {
             System.out.println("No existe un estudiante con el codigo " + codigo + ".");
         } else {
             mostrarDetalle(encontrado);
+        }
+    }
+
+    private static void generarReporte(GestionAcademica gestion) {
+        System.out.println("========= REPORTE ACADEMICO =========");
+        if (gestion.estaVacia()) {
+            System.out.println("No existen estudiantes registrados. No se puede generar el reporte.");
+            return;
+        }
+        System.out.println("Limite de aprobacion (Variante D): " + Estudiante.LIMITE_APROBACION);
+        System.out.println("Total de estudiantes:  " + gestion.getCantidad());
+        System.out.println("Aprobados:             " + gestion.contarAprobados());
+        System.out.println("Reprobados:            " + gestion.contarReprobados());
+        System.out.printf("Promedio general:      %.2f%n", gestion.calcularPromedioGeneral());
+        System.out.printf("Porcentaje aprobados:  %.2f %%%n", gestion.calcularPorcentajeAprobados());
+
+        Estudiante mayor = gestion.obtenerMayorPromedio();
+        Estudiante menor = gestion.obtenerMenorPromedio();
+        System.out.printf("Promedio mas alto:     %s - %s (%.2f)%n",
+                mayor.getCodigo(), mayor.getNombre(), mayor.calcularPromedio());
+        System.out.printf("Promedio mas bajo:     %s - %s (%.2f)%n",
+                menor.getCodigo(), menor.getNombre(), menor.calcularPromedio());
+
+        System.out.println("--- Estudiantes bajo el promedio general ---");
+        ArrayList<Estudiante> bajos = gestion.obtenerBajoPromedioGeneral();
+        if (bajos.isEmpty()) {
+            System.out.println("Ninguno.");
+        } else {
+            for (Estudiante e : bajos) {
+                System.out.printf("%s - %s (%.2f)%n", e.getCodigo(), e.getNombre(), e.calcularPromedio());
+            }
+        }
+
+        System.out.println("--- Listado ordenado de mayor a menor promedio ---");
+        imprimirTabla(gestion.ordenarPorPromedio());
+    }
+
+    private static void guardarRegistros(GestionAcademica gestion, GestorArchivos gestorArchivos) {
+        if (gestorArchivos.guardar(gestion.getEstudiantes())) {
+            System.out.println("Registros guardados en " + RUTA_ARCHIVO + " (" + gestion.getCantidad() + ").");
+        } else {
+            System.out.println("No se pudieron guardar los registros.");
         }
     }
 
