@@ -1,0 +1,62 @@
+PS C:\Examen-ALP-Paredes-Dereck> java -cp out Main
+Registros recuperados de datos/estudiantes.txt: 5
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 1
+--- Registro de estudiante ---
+Codigo: E008
+Nombre completo: Pedro Ortiz
+Calificacion 1 (0-20): 12
+Calificacion 2 (0-20): 14
+Calificacion 3 (0-20): 16
+Estudiante registrado correctamente.
+Codigo:        E008
+Nombre:        Pedro Ortiz
+Calificaciones: 12 - 14 - 16
+Promedio:      14,00
+Nota maxima:   16
+Nota minima:   12
+Estado:        APROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 3
+Ingrese el codigo a buscar: E003
+Codigo:        E003
+Nombre:        Paula Sanchez
+Calificaciones: 13 - 14 - 15
+Promedio:      14,00
+Nota maxima:   15
+Nota minima:   13
+Estado:        APROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 6
+Registros guardados en datos/estudiantes.txt (6).
+Programa finalizado.

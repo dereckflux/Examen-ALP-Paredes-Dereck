@@ -1,0 +1,42 @@
+PS C:\Examen-ALP-Paredes-Dereck> java -cp out Main
+Registros recuperados de datos/estudiantes.txt: 5
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 1
+--- Registro de estudiante ---
+Codigo: E006
+Nombre completo: Luis Vera
+Calificacion 1 (0-20): 15
+Calificacion 2 (0-20): 16
+Calificacion 3 (0-20): 17
+Estudiante registrado correctamente.
+Codigo:        E006
+Nombre:        Luis Vera
+Calificaciones: 15 - 16 - 17
+Promedio:      16,00
+Nota maxima:   17
+Nota minima:   15
+Estado:        APROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 6
+Registros guardados en datos/estudiantes.txt (6).
+Programa finalizado.

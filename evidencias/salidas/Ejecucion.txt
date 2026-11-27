@@ -1,0 +1,66 @@
+PS C:\Examen-ALP-Paredes-Dereck> java -cp out Main
+Registros recuperados de datos/estudiantes.txt: 5
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 2
+COD    NOMBRE                 N1   N2   N3     PROM  MAX  MIN  ESTADO
+E001   Carla Mena             16   18   17    17,00   18   16  APROBADO
+E002   Jorge Villacis         10   12   11    11,00   12   10  REPROBADO
+E003   Paula Sanchez          13   14   15    14,00   15   13  APROBADO
+E004   Diego Naranjo          20   19   18    19,00   20   18  APROBADO
+E005   Sofia Lopez             9   13   14    12,00   14    9  REPROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 4
+========= REPORTE ACADEMICO =========
+Limite de aprobacion (Variante D): 14.0
+Total de estudiantes:  5
+Aprobados:             3
+Reprobados:            2
+Promedio general:      14,60
+Porcentaje aprobados:  60,00 %
+Promedio mas alto:     E004 - Diego Naranjo (19,00)
+Promedio mas bajo:     E002 - Jorge Villacis (11,00)
+--- Estudiantes bajo el promedio general ---
+E002 - Jorge Villacis (11,00)
+E003 - Paula Sanchez (14,00)
+E005 - Sofia Lopez (12,00)
+--- Listado ordenado de mayor a menor promedio ---
+COD    NOMBRE                 N1   N2   N3     PROM  MAX  MIN  ESTADO
+E004   Diego Naranjo          20   19   18    19,00   20   18  APROBADO
+E001   Carla Mena             16   18   17    17,00   18   16  APROBADO
+E003   Paula Sanchez          13   14   15    14,00   15   13  APROBADO
+E005   Sofia Lopez             9   13   14    12,00   14    9  REPROBADO
+E002   Jorge Villacis         10   12   11    11,00   12   10  REPROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 6
+Registros guardados en datos/estudiantes.txt (5).
+Programa finalizado.

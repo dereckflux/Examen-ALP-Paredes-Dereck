@@ -1,0 +1,31 @@
+PS C:\Examen-ALP-Paredes-Dereck> java -cp out Main
+Aviso: no existe el archivo datos/estudiantes.txt. Se inicia sin registros.
+Registros recuperados de datos/estudiantes.txt: 0
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 4
+========= REPORTE ACADEMICO =========
+No existen estudiantes registrados. No se puede generar el reporte.
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 6
+Registros guardados en datos/estudiantes.txt (0).
+Programa finalizado.

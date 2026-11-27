@@ -1,0 +1,36 @@
+PS C:\Examen-ALP-Paredes-Dereck> java -cp out Main
+Registros recuperados de datos/estudiantes.txt: 5
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 3
+Ingrese el codigo a buscar: E004
+Codigo:        E004
+Nombre:        Diego Naranjo
+Calificaciones: 20 - 19 - 18
+Promedio:      19,00
+Nota maxima:   20
+Nota minima:   18
+Estado:        APROBADO
+
+=====================================
+        SISTEMA AULALOGIC
+=====================================
+1. Registrar estudiante
+2. Listar estudiantes
+3. Buscar estudiante
+4. Generar reporte academico
+5. Guardar registros
+6. Salir
+=====================================
+Seleccione una opcion: 6
+Registros guardados en datos/estudiantes.txt (5).
+Programa finalizado.
